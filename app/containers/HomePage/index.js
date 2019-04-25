@@ -10,16 +10,17 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Navbar from '../../components/Navbar';
+import  Product  from '../Product';
 
-/* eslint-disable react/prefer-stateless-function */
-export default class HomePage extends React.PureComponent {
-  render() {
-    return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
-    );
-  }
+
+// import { Link } from 'react-router-dom';
+
+export default function HomePage() {
+  return (
+    <div>
+      <Navbar/>
+      <Product/>
+    </div >
+  );
 }
